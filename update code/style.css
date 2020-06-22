@@ -1,0 +1,1057 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ img {vertical-align: middle;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ 
+ body{
+     font-family: arial;
+     font-size: 15px;
+     line-height: 25px;
+     color: #333;
+
+ }
+
+
+
+ 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s ease;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky{
+padding: 25px 100px;
+background: #fff;
+transition: 0.6s ease;
+border-bottom: 2px solid red;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+     text-transform: uppercase; 
+    letter-spacing: 2px;
+    transition: 0.6s ease;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+ 
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+header ul li a:hover{
+    color: red;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url(image/handsome-boy.jpeg);
+    background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+header.sticky .logo{
+    color: #000;
+}
+
+header.sticky ul li a{
+    color: #000;
+}
+
+header.sticky ul li a:hover{
+    color: red;
+   
+}
+
+.titel{
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+}
+.titel h1{
+    color: white;
+    font-weight: 800;
+    
+}
+
+.titel h1 span{
+    color: #ff9405;
+}
+
+.titelcontactP{
+    position: absolute;
+    top: 45%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+}
+
+.titelcontactP p{
+    color: #0ce24e;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+ /* below the aboutTitel*/
+ 
+ #aboutTitel{
+     text-align: center;
+     text-transform: uppercase;
+     color: red;
+     font-size: 29px;
+     font-family: cursive;
+     margin-top: 45px;
+ }
+
+ #aboutTitel h1 span{
+    color: #538a66;
+ } 
+
+ div#aboutImage22 {
+    width: 400px;
+}
+div#aboutImage22 img{
+    max-width: 100%;
+}
+
+div#rightContact12 {
+    width: 700px;
+    float: right;
+    margin-top: 15%;
+}
+
+#rightContact12 h2{font-size: 25px;border-bottom: 2px solid #afa4a4;margin-bottom: 17px;font-weight: bold;padding-bottom: 14px;font-family: monospace;color: #565656;}
+
+#rightContact12 p{
+    
+font-family: monospace;
+    
+font-size: 18px;
+    
+line-height: 29px;
+    
+color: #484848;
+}
+
+div#aboutImage22,div#rightContact12{
+    display: inline-block;
+}
+
+#aboutSectn{
+    padding: 121px 0px;
+    background: #dcdcdc;
+}
+
+/*servicesH1...*/
+#servicesH1{
+    text-align: center;
+    color:#fff;
+    font-size: 35px;
+    margin-bottom: 49px;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+#servicesH1 span{
+    color: rgb(53, 253, 124);
+    font-family: cursive;
+}
+
+
+/*Below servicesBlock...*/
+
+#servicesBlock{
+    width: 357px;
+    background: transparent;
+    color: white;
+    padding: 25px;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 15px;
+    transition: all 0.6s ease;
+}
+/*below the hover  #servicesBlock ..*/
+
+#servicesBlock:hover{
+    background: white;
+    color: black;
+    transform: translateY(-15px);
+}
+/*below the hover  #servicesBlock .. i */
+#servicesBlock:hover i{
+   color: rgb(34, 151, 145);
+   transform: rotateY(360deg);
+}
+
+/* below the sservicesBlock h1*/
+#servicesBlock h2{
+    font-family: monospace;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* below the servicesBlock p */
+
+#servicesBlock p{
+    font-family: cursive;
+    font-size: 14px;
+}
+
+/*below the servicesBlock Icon..*/
+
+#servicesBlock i{
+    font-size: 40px;
+    color: currentColor;
+    transition: all 2s ease;
+}
+
+/*below the leftIcon*/
+
+#leftIcon{
+    width: 70px;
+    float: left;
+    margin-top: 3px;
+}
+
+/*below the rightContact*/
+
+#rightContact{
+    width: 223px;
+    float: right;
+}
+
+#leftIcon,#rightContact{
+    display: inline-block;
+}
+
+/*below the allBlocks....*/
+
+#allBlocks{
+    width: 1170px;
+    margin: auto;
+}
+
+/*below the blockSectin...*/
+
+#blockSectin{
+    padding: 121px 0px;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(slider/home1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/*below the hobbyTitel...*/
+
+#hobbyTitel{
+    text-align: center;
+    margin-top: 53px;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: cursive;
+}
+#hobbyTitel h1 span{
+    color: #037907;
+    font-family: arial black;
+}
+
+
+/*below the sliderContainer...*/
+
+.sliderContainer{
+    max-width: 100%;
+    position: relative;
+   
+}
+
+.sliderContainer .myslider img{
+    width: 100%;
+    height: 500px;
+}
+
+.myslider{
+    display: none;
+    
+}
+.myslider{
+    margin-top: 60px;
+}
+
+.numberText{
+    position: absolute;
+    padding: 11px 14px;
+    color: #18f5e0;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: auto;
+}
+
+.captnText{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    color: #d8d8d8;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 5px 12px;
+    bottom: 10px;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    from{opacity: 0.4};
+    to{opacity: 1}
+}
+
+#sliderSection{
+    padding:  191px 0px;
+    background: #eae3e3;
+}
+
+/*About the Inspiration Vai*/
+
+#inspirationVai{text-align: center;text-transform: uppercase;font-size: 24px;color: rebeccapurple;font-weight: bold;font-family: cursive;}
+
+#inspirationVai h1 span{
+    font-size: 50px;
+    color: #0707ca;
+}
+
+.slidervai-imageLeft{
+    width: 400px;
+}
+.slidervai-imageLeft img{
+    max-width: 100%;
+}
+
+.slidervai-contactRight{
+    width: 700px;
+    float: right;
+    margin-top: 8%;
+}
+.slidervai-imageLeft,.slidervai-contactRight{
+    display: inline-block;
+}
+#inspraivaiSec{
+    padding: 121px 0px;
+}
+
+/*Below the start My  skill*/
+
+#skillTitel{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 81px;
+    font-weight: bold;
+    color: #8e3838;
+    font-size: 31px;
+    font-family: cursive;
+}
+
+.skillContainer{
+    width: 600px;
+    position: absolute;
+    margin-top: 78px;
+}
+
+.box {
+    width: 100%;
+    background: #e1e6ec;
+    box-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(255,255,255,0.5);
+    border-radius: 50px;
+    margin: 20px 0px;
+}
+
+.single-box {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: #5f07bf;
+    font-weight: bold;
+}
+.box1{
+    width: 80%;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.box2{
+    width: 80%;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.box3{
+    width: 50%;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.box4{
+    width: 40%;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.box5{
+    width: 20%;
+    background-color: red;
+    border-radius: 50px;
+}
+
+
+.skillImage{
+    width: 400px;
+    float: right;
+}
+
+.skillImage img{
+    width: 100%;
+}
+
+.skillContainer span{
+    color: #1046de;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 15px;
+}
+#skillTitel h1 span{
+    font-family: cursive;
+    color: #8e3838;
+}
+
+section#skillSectn {
+    padding: 51px 0px 650px 0px;
+    background: #f1f1f1;
+}
+/*about the blow favSinger */
+
+#favSinger{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.favVideo{
+   
+   display: inline;
+    
+}
+video:hover{
+    transform: scale(0.9);
+   
+}
+video{
+    border-radius: 7px;
+    transition: 1s ease;
+   
+    width: 300px;
+    margin: 10px;
+    margin-top: 80px;
+}
+
+.singerImg{
+    float: right;
+    width: 400px;
+    margin-top: 183px;
+}
+
+.singerImg img{
+    width: 100%;
+}
+
+.favVideo{
+    margin-top: 15px;
+}
+
+.singerImg h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#favSinger span{
+    text-transform: initial;
+    color: #415e9e;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+
+#favoriteSinger{
+    padding: 121px;
+    background: #ffffff;
+}
+
+#heeding2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.singerImg h3{
+    color: #4f21dc;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+/*about the blow myAewred*/
+#awredTitel{
+    text-align: center;
+    padding-top: 35px;
+    
+    
+}
+#awredTitel h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #ff662c;
+    font-family: cursive;
+}
+
+#awredTitel p{
+    font-weight: 600;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 15px; 
+}
+
+.awerdBlock{
+    position: relative;
+    padding: 28px 30px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.awredRow{
+    width: 23%;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 90px;
+    margin-bottom: 55px;
+}
+
+.awerdBlock .awrednumberCounter{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.awerdBlock p{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+
+}
+
+.awerdBlock i{
+    position: absolute;
+    color: #ffffff;
+    font-size: 50px;
+    bottom: 0;
+    z-index: 0;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    left: 0;
+    top: 0px;
+}
+
+#awredSec{
+    background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(image/jk.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 110px 0px;
+}
+
+/*mAbout the below portfolio*/
+
+.portfolioTitel{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 130px;
+    position: relative;
+}
+.portfolioTitel h1{
+    color: #1c02ef;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    
+    
+}
+
+/* start the portfolio section*/
+
+.protfolioConair{
+    position: relative;
+    width: 1200px;
+    height: 570px;
+    margin: 80px auto;
+}
+
+.porfolioImage{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(285px - 30px);
+    background: rgb(0, 0, 0,10); 
+    float: left;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,.8);
+}
+
+.protfolioConair .porfolioImage .imgBox{
+    position: relative;
+    cursor: pointer;
+    }
+
+.protfolioConair .porfolioImage .imgBox img{
+    width: 100%;
+    transition: 0.5s ease;
+    height: -webkit-fill-available;
+   
+} 
+
+
+.protfolioConair .porfolioImage:hover .imgBox img{
+    opacity: .2;
+    transform: scale(1.2);
+}
+
+.protfolioConair .porfolioImage::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 2px dotted #fff;
+    border-bottom: 2px dotted #fff;
+    box-sizing: border-box;
+    transition: 1s ease;
+    opacity: 0;
+    transform: scaleX(0);
+    z-index: 1;
+}
+
+.protfolioConair .porfolioImage:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+.protfolioConair .porfolioImage::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 2px dotted #fff;
+    border-right: 2px dotted #fff;
+    box-sizing: border-box;
+    transition: 1s ease;
+    opacity: 0;
+    transform: scaleY(0);
+    z-index: 1;
+}
+
+.protfolioConair .porfolioImage:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.protfolioConair .porfolioImage .portfolioContent{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.protfolioConair .porfolioImage .portfolioContent h3{
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: monospace;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.protfolioConair .porfolioImage:hover .portfolioContent h3{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.protfolioConair .porfolioImage .portfolioContent p{
+    color: #fff;
+    font-family: serif;
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility:hidden;
+    font-weight: bold;
+}
+
+.protfolioConair .porfolioImage:hover .portfolioContent p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+#porfolioSec{
+    padding: 50px 0;
+}
+
+/* start the aviableSec style*/
+
+#aviableSec{
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(image/cover.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 230px 0px;
+}
+
+.aviableConent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aviableConent h2{
+    color: #3aeab9;
+    letter-spacing: 12px;
+    font-size: 42px;
+    font-family: fantasy;
+    font-weight: 600;
+}
+
+.HeaiLnk{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.HearMe{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    background: blue;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: unset;
+    transition: 0.8s ease;
+}
+
+.HearMe:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* Form Section css below */
+
+.formContainer{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    background: #122647;
+    height: 600px;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.formContainer .fromBx{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer .fromBx form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+
+.formContainer .fromBx form h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.formContainer .fromBx form .formInp{
+    position: relative;
+    margin-bottom: 40px;
+
+}
+ 
+.formContainer .fromBx form .formInp:last-child{
+     margin-bottom: 0px; 
+
+}
+ 
+
+.formContainer .fromBx form .formInp input,
+.formContainer .fromBx form .formInp textarea{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+resize: none;
+    border-bottom: 2px solid rgb(255, 255, 255,0.5);
+}
+
+.formContainer .fromBx form .formInp textarea{
+    height: 100px;
+    
+}
+
+.formContainer .fromBx form .formInp input[type="submit"]{
+    /* background: #fff; */
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 225px;
+    cursor: pointer;
+    background: #ff5064;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 50px;
+}
+
+.formContainer .fromBx form .formInp input[type="submit"]:focus {
+   background: #fff;
+   color: #000;
+}
+ 
+
+
+
+.formContainer .fromBx form .formInp span{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255,0.5);
+    transition:  all 0.5s;
+}
+
+
+.formContainer .fromBx form .formInp input:focus ~ span,
+.formContainer .fromBx form .formInp textarea:focus ~ span,
+.formContainer .fromBx form .formInp input:valid~ span,
+.formContainer .fromBx form .formInp textarea:valid ~ span
+{
+    transform: translateY(-24px);
+    color: #1bfaad;
+}
+
+
+.formContainer .fromBx form .formInp input:focus,
+.formContainer .fromBx form .formInp textarea:focus,
+.formContainer .fromBx form .formInp input:valid,
+.formContainer .fromBx form .formInp textarea:valid
+{
+    border-bottom-color:#fff;
+    transition: all 0.3s ease;
+    
+} 
+
+.formContainer .frmImgbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.formContainer .frmImgbx:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff5064;
+    transform-origin: bottom;
+     transform: skewX(-25deg) ; 
+}
+/* translateX(10%) */
+
+
+.formContainer .frmImgbx img{
+    position: absolute;
+    bottom: 0px;
+    max-width: 95%;
+    left: 26%;
+}
+ 
+section#fromSec {
+    background: #122647;
+    padding: 54px 0;
+    margin-top: 130px;
+ }
+
+
+ 
+
+/* Last footer Content */
+
+footer{
+    background: #333;
+    color: #f1f1f1;
+    height: 100px;
+}
+
+#foterDiv{
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: initial;
+    font-size: 20px;
+}
+
+/* subMenu style */
+
+ul#subMenu {
+    list-style: none;
+    display: block;
+     background: #45ca86; 
+    width: 285px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border-top: 2px solid black;
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: top;
+    transition: all 1s;
+    /* border-radius: 3px; */
+}
+
+header ul li:hover #subMenu {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+ul#subMenu li{
+    float: none;
+}
+
+ul#subMenu li a{
+    transition: all 1s;
+    font-weight: 600;
+    font-family: cursive;
+     /* background: black;  */
+    width: 100%;
+    padding: 8px;
+     /* color: white;  */
+    display: block;
+    left: -15px;
+    padding: 13px;
+    
+}
+
+ul#subMenu li:hover a{
+    padding-left: 50px;
+    color: red;
+    background: white;
+  
+}
+
+
+
+
