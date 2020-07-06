@@ -21,7 +21,10 @@ function autoSlider(){
   setTimeout(autoSlider, 2000);
 }
 
+/*
 
+
+*/
 
 
 

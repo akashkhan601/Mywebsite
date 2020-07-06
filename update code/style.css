@@ -19,9 +19,6 @@ html{
 
  }
 
-
-
- 
 header{
     position: fixed;
     top: 0;
@@ -103,34 +100,40 @@ header.sticky ul li a:hover{
    
 }
 
-.titel{
+h3.ah-headline.clip.is-full-width {
     position: absolute;
-    top: 38%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-    font-size: 32px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-family: monospace;
+    letter-spacing: 4px;
 }
+.titel {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .titel h1{
-    color: white;
+    color: #fff;
+    font-size: 65px;
     font-weight: 800;
-    
+    letter-spacing: 3px;
 }
 
 .titel h1 span{
     color: #ff9405;
+    letter-spacing: 3px;
+     font-family: monospace; 
+     font-size: 75px;
+    font-weight: 900;
 }
 
-.titelcontactP{
-    position: absolute;
-    top: 45%;
-    left: 31%;
-    transform: translate(-50%,-50%);
-}
-
-.titelcontactP p{
-    color: #0ce24e;
-    font-family: monospace;
-    font-weight: 600;
+.ah-headline{
+    color: #fff;
+    
 }
 
  /* below the aboutTitel*/
