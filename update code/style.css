@@ -124,7 +124,7 @@ h3.ah-headline.clip.is-full-width {
 }
 
 .titel h1 span{
-    color: #ff9405;
+    color: #07f19b;
     letter-spacing: 3px;
      font-family: monospace; 
      font-size: 75px;
@@ -135,6 +135,169 @@ h3.ah-headline.clip.is-full-width {
     color: #fff;
     
 }
+
+.otherContact{
+    position: absolute;
+    top: 68%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+}
+
+#hairmeBtn{
+    position: absolute;
+    top: 68%;
+    right: 57%;
+    transform: translate(-50%, -50%);
+}
+
+#hairmeBtn a{
+    padding: 11px;
+    font-size: 14px;
+    color: black;
+    background: white;
+    outline: none;
+    border: 2px solid #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-weight: 500;
+     transition: 0.5s; 
+     text-decoration: none;
+}
+
+#hairmeBtn a:hover{
+background: black;
+color: white;
+border-radius: 50px;
+}
+
+.otherContact input{
+    padding: 11px;
+    font-size: 14px;
+    color: black;
+    background: #ff9405;
+    outline: none;
+    border: 2px solid #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    cursor: pointer;
+    font-weight: 500;
+     transition: 0.5s; 
+}
+
+.otherContact input:hover{
+    background: black;
+    color: white;
+    border: 2px solid #ff9405;
+    border-radius: 50px;
+}
+
+.modalContact{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+     display: none;
+}
+
+
+.modalformInput{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.8s;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+ 
+
+.modalformInput{
+    position: absolute;
+    width: 800px;
+    height: 480px;
+    background-color: white;
+    margin: auto;
+    top: 120px;
+    justify-content: center;
+    align-items: center;
+    left: 255px;
+    z-index: 1;
+    border-radius: 3px;
+    text-align: center;
+    padding: 20px;
+}
+
+.modalformInput img{
+    position: relative;
+    width: 18%;
+}
+
+#modalForm .modalfrmInp{
+    width: 50%;
+    display: block;
+    margin: 25px auto;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #00000047;
+     resize: none; 
+     font-size: 16px;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: 2px;
+     position: relative; 
+}
+
+.modalfrmClose{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 45px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.modalfrmClose:hover{
+    color: red;
+}
+
+#modalForm .modalfrmSubmit{
+    padding: 10px;
+    font-size: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 50px;
+}
+
+#modalForm input:focus,
+#modalForm textarea:focus,
+#modalForm input:valid,
+#modalForm textarea:valid{
+    border-bottom-color: #000;
+    transition: all 0.8s ease-in;
+}
+
+
+
 
  /* below the aboutTitel*/
  
@@ -635,6 +798,7 @@ video{
     font-size: 30px;
     margin-top: 130px;
     position: relative;
+    top: 50px;
 }
 .portfolioTitel h1{
     color: #1c02ef;
@@ -642,140 +806,133 @@ video{
     align-items: center;
     justify-content: center;
     font-family: cursive;
-    
-    
 }
 
 /* start the portfolio section*/
 
-.protfolioConair{
-    position: relative;
-    width: 1200px;
-    height: 570px;
-    margin: 80px auto;
+#porfolioSec{
+    padding-bottom: 250px;
+    background-color: #eae6e6;
 }
 
-.porfolioImage{
+
+.imgBox{
     position: relative;
-    width: calc(400px - 30px);
-    height: calc(285px - 30px);
-    background: rgb(0, 0, 0,10); 
-    float: left;
+    width: 225px;
+    height: 189px;
+    margin-top: 50px;
+    display: inline-block;
+    margin: 12px;
+    margin-top: 11px;
     overflow: hidden;
-    margin: 15px;
-    box-shadow: 0 5px 10px rgb(0, 0, 0,.8);
 }
 
-.protfolioConair .porfolioImage .imgBox{
-    position: relative;
-    cursor: pointer;
-    }
-
-.protfolioConair .porfolioImage .imgBox img{
+.imgBox img{
+      position: absolute; 
     width: 100%;
-    transition: 0.5s ease;
-    height: -webkit-fill-available;
-   
-} 
+    height: 100%;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    
+}
 
+.fullimgContainer{
+    margin-top: 111px;
+}
 
-.protfolioConair .porfolioImage:hover .imgBox img{
-    opacity: .2;
+.imgContainer {
+     position: relative; 
+    width: 250px;
+    height: 213px;
+    background: white;
+    display: inline-block;
+    margin: 19px;
+    ;
+    transition: all 0.5s ease;
+    border: 1px solid white; 
+    border-radius: 3px;
+    
+}
+
+.imgContainer:hover{
+    border: 1px solid black;
+}
+
+.imgContainer .imgBox:hover img{
     transform: scale(1.2);
 }
 
-.protfolioConair .porfolioImage::before{
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-top: 2px dotted #fff;
-    border-bottom: 2px dotted #fff;
-    box-sizing: border-box;
-    transition: 1s ease;
-    opacity: 0;
-    transform: scaleX(0);
-    z-index: 1;
-}
-
-.protfolioConair .porfolioImage:hover::before{
-    opacity: 1;
-    transform: scaleX(1);
-}
-
-
-.protfolioConair .porfolioImage::after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-left: 2px dotted #fff;
-    border-right: 2px dotted #fff;
-    box-sizing: border-box;
-    transition: 1s ease;
-    opacity: 0;
-    transform: scaleY(0);
-    z-index: 1;
-}
-
-.protfolioConair .porfolioImage:hover::after{
-    opacity: 1;
-    transform: scaleY(1);
-}
-
-.protfolioConair .porfolioImage .portfolioContent{
-    position: absolute;
+.display-modal{
+    position: fixed;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    z-index: 1;
+    display: none;
+    
 }
 
-.protfolioConair .porfolioImage .portfolioContent h3{
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 25px;
-    font-family: monospace;
-    transition: 0.5s;
-    transform: translateY(-50px);
-    opacity: 0;
-    visibility: hidden;
-}
-
-.protfolioConair .porfolioImage:hover .portfolioContent h3{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0px);
-}
-
-.protfolioConair .porfolioImage .portfolioContent p{
-    color: #fff;
-    font-family: serif;
-    transition: 0.5s;
-    transform: translateY(50px);
-    opacity: 0;
-    visibility:hidden;
-    font-weight: bold;
-}
-
-.protfolioConair .porfolioImage:hover .portfolioContent p{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0px);
+.imgmodalContainer{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+    top: 120px;
+    justify-content: center;
+    align-items: center;
+    left: 255px;
+    z-index: 1;
+    border-radius: 3px;
+    
 }
 
 
-#porfolioSec{
-    padding: 50px 0;
+.imgmodalContainer {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.8s;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+
+
+.imgmodalContainer .modal-img{
+    position: relative;
+    width: 730px;
+    height: 440px;
+    left: 33px;
+    top: 33px;
+   border-radius: 3px;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 43px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: 0.5s ease;
+   
+}
+
+.close:hover{
+    
+    color: red;
 }
 
 /* start the aviableSec style*/

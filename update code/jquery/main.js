@@ -3,5 +3,14 @@ $(document).ready(function(){
         $('.animate-clip').animatedHeadline({
             animationType: 'clip'
         });
-    })
+    });
+
+    $("#modalcontactBtn").click(function(){
+        $(".modalContact").show();
+    });
+
+    $(".modalfrmClose").click(function(){
+        $(".modalContact").hide(1000);
+    });
+    
 })
