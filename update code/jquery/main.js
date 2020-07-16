@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $(function() {
         $('.animate-clip').animatedHeadline({
-            animationType: 'clip'
+            animationType: 'clip',
+            
+            
         });
     });
 
@@ -12,5 +14,14 @@ $(document).ready(function(){
     $(".modalfrmClose").click(function(){
         $(".modalContact").hide(1000);
     });
+
+    $('.manafic-zoom').magnificPopup({
+        
+        type:'image',
+        gallery:{
+            enabled:true
+          }
+});
     
-})
+});
+
