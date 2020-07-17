@@ -81,7 +81,7 @@ header ul li a:hover{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url(image/handsome-boy.jpeg);
+    background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(image/handsome-boy.jpeg);
     background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
@@ -350,9 +350,16 @@ div#aboutImage22,div#rightContact12{
     display: inline-block;
 }
 
+div#aboutImage22 {
+    border: 2px solid #f1ca0b;
+    box-shadow: 0px 4px 10px 5px;
+}
+
+ 
+
 #aboutSectn{
     padding: 121px 0px;
-    background: #dcdcdc;
+    background: #fff;
 }
 
 /*servicesH1...*/
@@ -528,8 +535,8 @@ div#aboutImage22,div#rightContact12{
 }
 
 #sliderSection{
-    padding:  191px 0px;
-    background: #eae3e3;
+    padding:  121px 0px;
+    background: #fffbfb;
 }
 
 /*About the Inspiration Vai*/
@@ -1176,7 +1183,7 @@ ul#subMenu {
     list-style: none;
     display: block;
      background: #45ca86; 
-    width: 285px;
+    width: 334px;
     position: absolute;
     top: 50px;
     left: 0;
@@ -1270,13 +1277,18 @@ ul#subMenu li:hover a{
     background: #000;
     color: #fff;
     margin: 10px;
-    /* text-transform: uppercase; */
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.5s ease;
-    
+    border-radius: 50px;
+    border: 1px solid black;
 }
 
+.potControl ul li:hover{
+    background: #ffb100;
+    color: black;
+    border: 1px solid black;
+}
 
 
 .potControl{
@@ -1340,4 +1352,104 @@ ul#subMenu li:hover a{
 
 #potfolioTitel h1 span{
     color: #f9a100;
+}
+
+/* client section */
+
+.client-say-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-top: 110px;
+}
+
+.client-say-title h1{
+    font-size: 30px;
+    color: red;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.clientPic{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    background: transparent;
+}
+
+.clientPic img{
+    
+width: 100%;
+    
+height: 100%;
+    
+border-radius: 50%;
+    
+border: 3px solid #fff;
+    
+background: #fff;
+}
+
+.clientPara{
+     width: 952px;
+     margin: auto;
+     font-weight: 600;
+     margin-top: 25px;
+     color: #fff;
+}
+
+.clientPara p{
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.clientName{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.clinetRating {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #f3f307;
+}
+
+#clientSection{
+    
+    padding: 20px 0px;
+
+    background: #1f1a1a;
+
+    margin-bottom: 10%;
+    
+    /* padding-bottom: 30px; */
+}
+
+.full-owl-carsoul-container.owl-carousel.owl-loaded.owl-drag {
+    z-index: auto;
+}
+
+i.fas.fa-quote-left , i.fas.fa-quote-right {
+    font-size: 25px;
+    color: #fff;
+}
+
+i.fas.fa-quote-right{
+    top: 12px;
+    position: relative;
+}
+
+i.fas.fa-quote-left{
+    bottom: 11px;
+    position: relative;
+}
+
+#clientsTitel h1 span{
+    color: #1bab3a
 }
