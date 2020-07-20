@@ -67,7 +67,7 @@ header ul li a{
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-weight: 500;
     transition: 0.6s ease;
@@ -104,36 +104,61 @@ header.sticky ul li a:hover{
 
 .ah-headline{
     position: relative;
-    top: 45%;
-    left: 40%;
+    top: 60%;
+    left: 38%;
     transform: translate(-50%, -50%);
-      font-size: 35px; 
+      font-size: 40px; 
     font-family: monospace;
      letter-spacing: 1px; 
     display: inline;
     font-weight: 800;
 }
 
+.social-btn {
+    position: absolute;
+    top: 79%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+}
+
+.social-contact-btn{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 8px;
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.social-contact-btn:hover{
+    background: #07f19b;
+    color: #000;
+    border: 1px solid #07f19b;
+}
+
 
 .titel {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .titel h1{
     color: #fff;
-    font-size: 65px;
+    font-size: 75px;
     font-weight: 800;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
 }
 
 .titel h1 span{
     color: #07f19b;
-    letter-spacing: 3px;
-     font-family: monospace; 
-     font-size: 75px;
+    letter-spacing: 10px;
     font-weight: 900;
 }
 
@@ -144,16 +169,16 @@ header.sticky ul li a:hover{
 
 .otherContact{
     position: absolute;
-    top: 60%;
-    left: 66%;
-    transform: translate(-50%, -50%);
+    top: 107%;
+    left: 26%;
+    /* transform: translate(-50%, -50%); */
 }
 
 #hairmeBtn{
     position: absolute;
-    top: 60%;
-    right: 57%;
-    transform: translate(-50%, -50%);
+    top: 109%;
+    /* right: 57%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 #hairmeBtn a{
@@ -236,7 +261,7 @@ border-radius: 50px;
     height: 480px;
     background-color: white;
     margin: auto;
-    top: 120px;
+    top: 110px;
     justify-content: center;
     align-items: center;
     left: 255px;
@@ -305,62 +330,124 @@ border-radius: 50px;
 
 
 
- /* below the aboutTitel*/
+ /* below the about section*/
  
- #aboutTitel{
-     text-align: center;
-     text-transform: uppercase;
-     color: red;
-     font-size: 29px;
-     font-family: cursive;
-     margin-top: 45px;
+ #about-section{
+     padding: 121px 0px;
+     background: #fff;
  }
 
- #aboutTitel h1 span{
-    color: #538a66;
- } 
+ .about-me{
+     margin-bottom: 35px;
+ }
 
- div#aboutImage22 {
-    width: 400px;
+.about-me-container{
+    position: relative;
+    width: 100%;
+    /* max-width: 1100px; */
+    margin: auto;
+    height: 600px;
+    background: #122647;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-div#aboutImage22 img{
-    max-width: 100%;
-}
 
-div#rightContact12 {
-    width: 700px;
-    float: right;
-    margin-top: 15%;
-}
-
-#rightContact12 h2{font-size: 25px;border-bottom: 2px solid #afa4a4;margin-bottom: 17px;font-weight: bold;padding-bottom: 14px;font-family: monospace;color: #565656;}
-
-#rightContact12 p{
+.about-me-container .about-me-box{
+    position:absolute;
+    top: 5%;
+    left: 5%;
     
-font-family: monospace;
-    
-font-size: 18px;
-    
-line-height: 29px;
-    
-color: #484848;
 }
 
-div#aboutImage22,div#rightContact12{
-    display: inline-block;
+.about-me-container .about-me-box h1{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-family: arial black;
 }
 
-div#aboutImage22 {
-    border: 2px solid #f1ca0b;
-    box-shadow: 0px 4px 10px 5px;
+.about-me-container .about-me-box h1 span{
+    color: #ef9207;
 }
 
+.about-me-container .about-me-box .about-title{
+    color: #fff;
+    width: 674px;
+    margin-top: 50px;
+
+}
+
+.about-me-container .about-me-box .about-title p{
+    
+    font-family: monospace;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.title-menu {
+    position: relative;
+    width: 368px;
+    margin-top: 35px;
+    left: 19px;
+}
+
+.title-menu ul {
+    line-height: 1.9;
+   
+}
+
+.title-menu li {
+    font-size: 20px;
+    color: #06ef63;
+}
+
+.menuSpan {
+    color: #fff;
+    font-family: monospace;
+}
+
+.about-me-img-box{
+    position: relative;
+    width: 38%;
+    height: 100%;
+    overflow: hidden;
+    left: 62%;
+}
+
+.about-me-img-box:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ff5064;
+transform: skewX(-10deg) translateX(10%)
+}
+
+.about-me-img-box img{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 330px;
+}
+
+.about-me{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 9px;
+    color: rebeccapurple;
+    margin-bottom: 56px;
+}
+
+
+
+ /*end the about section */
  
-
-#aboutSectn{
-    padding: 121px 0px;
-    background: #fff;
-}
 
 /*servicesH1...*/
 #servicesH1{
@@ -553,13 +640,22 @@ div#aboutImage22 {
 }
 .slidervai-imageLeft img{
     max-width: 100%;
+    border-radius: 50%;
 }
 
 .slidervai-contactRight{
     width: 700px;
     float: right;
-    margin-top: 8%;
+    margin-top: 9%;
 }
+
+.slidervai-contactRight p{
+    line-height: 2;
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
 .slidervai-imageLeft,.slidervai-contactRight{
     display: inline-block;
 }
@@ -1029,11 +1125,16 @@ video{
 
 .formContainer .fromBx form h2{
     color: #000;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin-bottom: 56px;
+    color: chocolate;
+}
+
+.formContainer .fromBx form h2 span{
+color: red;
 }
 
 .formContainer .fromBx form .formInp{
@@ -1061,7 +1162,7 @@ video{
     font-weight: 300;
     resize: none;
     border-bottom: 2px solid #00000052;
-    margin-top: 20px;
+    font-family: monospace;
     padding-bottom: 16px;
 }
 
@@ -1071,18 +1172,18 @@ video{
 }
 
 .formContainer .fromBx form .formInp input[type="submit"]{
-    color: #fff;
+    color: #000;
     padding: 8px 20px;
     margin-top: -10px;
     width: 225px;
     cursor: pointer;
-    background: #093833;
+    /* background: #093833;  other background color*/
+    background: #ffb100;
     font-size: 18px;
     font-weight: 400;
     border: none;
     text-transform: uppercase;
     letter-spacing: 4px;
-    
 }
 
 .formContainer .fromBx form .formInp input[type="submit"]:focus {
@@ -1090,9 +1191,6 @@ video{
    color: #fff;
    
 }
- 
-
-
 
 .formContainer .fromBx form .formInp span{
     position: absolute;

@@ -39,3 +39,23 @@ $(".owl-carousel").owlCarousel({
     
 });
 
+/*  
+
+	<div class="modalContact">
+			<div class="modalformInput">
+				<div class="modalfrmClose">+</div>
+<img src="image/frmPic.png" alt="">
+
+<form action="" id="modalForm">
+	<input type="text" id="modalfrmInp1" class="modalfrmInp" placeholder="Name" required>
+	<input type="email" id="modalfrmInp23" class="modalfrmInp" placeholder="E-Mail" required>
+	<textarea id="modalfrmInp3" class="modalfrmInp"  placeholder="Massage" required></textarea>
+	<input type="submit" value="Submit" class="modalfrmSubmit">
+	
+</form>
+			</div>
+		</div>
+
+
+*/
+
